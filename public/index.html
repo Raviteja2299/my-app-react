@@ -24,12 +24,35 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <style>
+      .mov{
+        display: flexbox;
+        flex-direction: column;
+        font-family: 'Courier New', Courier, monospace;
+
+      }
+      .mov p{
+        color: brown;
+      }
+      .mov h1{
+        color: royalblue;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .mov article {
+        background-color: bisque;
+        display: flexbox;
+        flex-direction: column;
+      }
+    </style>
+    <title>My App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
+
+
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +62,42 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <div id="root1" style="border-bottom: 5px solid black;"></div>
+
+    <div id="component" style="border-bottom: 5px solid black;"></div>
+    <div id="images" style="border-bottom: 5px solid black;" ></div>
+    <center><h1>Movies</h1>
+    
+      <h4>Un-comment COMMENTS in index.js</h4>
+    </center>
+    <div id="props" style="border-bottom: 5px solid black;" class="mov"></div>
+
+    <center>
+      <h1>Cards</h1>
+      <h4>Un comment cards in index.js</h4>
+    </center>
+    <div id="cards" style="border-bottom: 5px solid black;"></div>
+
+
+    <center><h1>Comments</h1>
+    
+      <h4>Un-comment COMMENTS in index.js</h4>
+    </center>
+    <div id="comments" style="border-bottom: 5px solid black;"></div>
+    <center><h1>Use State</h1>
+    
+      <h4>Un-comment USE State in index.js</h4>
+    </center>
+    <div id="usestate" style="border-bottom: 5px solid black;"></div>
+
+    <center><h1>Items</h1></center>
+    <div id="items"></div>
+
+
+    <center><h1>Toggle</h1></center>
+    <div id="toggle"></div>
+
+
   </body>
 </html>

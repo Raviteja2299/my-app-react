@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+const Welcome = () => {
+  const student = {
+    name: "Ravi",
+    age: 20,
+    college: "Alts",
+  };
 
-function App() {
+  function details(std) {
+    return `Hello i'm ${std.name}, my age is ${std.age} , i'm form ${std.college} college`;
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <section>
+      <header>
+        <h1>Hello</h1>
       </header>
-    </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit . Doloremque
+        provident voluptatum odio. Sint molestiae aspernatur ipsum deserunt
+        accusantium delectus neque.
+      </div>
+      <h1>Details : {details(student)}</h1>
+      <label > User name : </label>
+      {/* <input type="text" id="name" placeholder="Enter Name"/> */}
+      
+    </section>
   );
-}
+};
 
-export default App;
+export default Welcome;
